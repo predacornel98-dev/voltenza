@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ro">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>VOLTENZA</title>
+<style>
+    footer {
+    padding: 50px;
+    background: #111827;
+    color: white;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 8px 0;
+    color: #d1d5db;
+}
+
+footer .copyright {
+    margin-top: 25px;
+    font-size: 14px;
+}
+  .offer {
+    padding: 80px 50px;
+    background: white;
+}
+
+.offer h2 {
+    font-size: 40px;
+    max-width: 700px;
+    margin: 10px 0 20px;
+}
+
+.offer > p:not(.hero-label) {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.offer form {
+    max-width: 600px;
+    margin-top: 40px;
+}
+
+.offer label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.offer input,
+.offer select,
+.offer textarea {
+    width: 100%;
+    padding: 14px;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.offer textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.offer button {
+    margin-top: 25px;
+    padding: 15px 25px;
+    background: #f59e0b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}  
+    .offer-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 25px;
+    background: #f59e0b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+ .calculator {
+    padding: 80px 50px;
+    background: #111827;
+    color: white;
+}
+
+.calculator h2 {
+    font-size: 40px;
+    max-width: 700px;
+    margin: 10px 0 20px;
+}
+
+.calculator > p:not(.hero-label) {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.calculator label {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.calculator input,
+.calculator select {
+    padding: 14px;
+    width: 280px;
+    max-width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.calculator button {
+    display: block;
+    margin-top: 25px;
+    padding: 15px 25px;
+    background: #f59e0b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#rezultat {
+    margin-top: 30px;
+    padding: 20px;
+    max-width: 600px;
+    background: #1f2937;
+    border-radius: 10px;
+    line-height: 1.7;
+}   
+    .services {
+    padding: 80px 50px;
+    background: #f5f7f8;
+}
+
+.services h2 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    color: #222;
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+    font-size: 20px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #111827;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+    body {
+        font-family: Arial, sans-serif;
+        text-align: left;
+        padding-top: 100px;
+        background: #f5f7f8;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+.hero {
+    padding: 100px 50px;
+    background: white;
+}
+
+.hero-label {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.hero-text {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 650px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 22px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: #f59e0b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button.secondary {
+    background: #111827;
+}
+</style>
+
+    </head>
+
+<body>
+<header>
+
+    <div class="logo">VOLTENZA</div>
+
+    <nav>
+        <a href="#">Acasă</a>
+        <a href="#">Sisteme</a>
+        <a href="#">Produse</a>
+        <a href="#">Suport tehnic</a>
+        <a href="#">Contact</a>
+    </nav>
+
+</header>
+<section class="hero">
+
+    <p class="hero-label">
+        SOLUȚII INTELIGENTE PENTRU ENERGIE
+    </p>
+
+    <h1>
+        Energia ta.<br>
+        Controlul tău.
+    </h1>
+
+    <p class="hero-text">
+        Sisteme fotovoltaice, produse și suport tehnic
+        pentru o energie mai inteligentă și mai eficientă.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="#" class="button">
+            Cere o ofertă
+        </a>
+
+        <a href="#" class="button secondary">
+            Calculează-ți sistemul
+        </a>
+
+        <a href="#" class="button secondary">
+            Suport tehnic
+        </a>
+
+    </div>
+
+</section>
+<script>
+
+function calculeazaSistem() {
+
+    let consum = Number(document.getElementById("consum").value);
+    let baterie = document.getElementById("baterie").value;
+
+    if (consum <= 0) {
+
+        document.getElementById("rezultat").innerHTML =
+            "Te rugăm să introduci un consum lunar valid.";
+
+        return;
+    }
+
+    let consumAnual = consum * 12;
+
+    let productiePeKW = 1200;
+
+    let putereSistem = consumAnual / productiePeKW;
+
+    let mesaj =
+        "<strong>Estimare orientativă VOLTENZA</strong><br><br>" +
+        "Consum anual estimat: " +
+        consumAnual.toFixed(0) +
+        " kWh<br>" +
+
+        "Putere fotovoltaică estimată: aproximativ " +
+        putereSistem.toFixed(1) +
+        " kW<br>";
+
+    if (baterie === "da") {
+
+        let baterieEstimata = consum / 60;
+
+        mesaj +=
+            "Baterie: recomandare orientativă de aproximativ " +
+            baterieEstimata.toFixed(1) +
+            " kWh<br>";
+
+    } else {
+
+        mesaj +=
+            "Configurație: fără baterie<br>";
+
+    }
+
+    mesaj +=
+        "<br><small>Rezultatul este orientativ și nu reprezintă o dimensionare tehnică finală.</small>";
+
+    document.getElementById("rezultat").innerHTML = mesaj;
+}
+function trimiteCererea(event) {
+
+    event.preventDefault();
+
+    let nume = document.getElementById("nume").value;
+    let telefon = document.getElementById("telefon").value;
+    let localitate = document.getElementById("localitate").value;
+
+    alert(
+        "Mulțumim, " + nume +
+        "! Cererea ta a fost completată.\n\n" +
+        "Telefon: " + telefon +
+        "\nLocalitate: " + localitate
+    );
+}
+</script>
+
+</body>
+
+
+</html>
+<section class="services">
+
+    <p class="hero-label">CE FACEM</p>
+
+    <h2>Soluții pentru energia ta.</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>☀️ Sisteme fotovoltaice</h3>
+            <p>
+                Soluții adaptate consumului și necesităților tale.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🔋 Stocare cu baterii</h3>
+            <p>
+                Păstrează energia produsă și folosește-o când ai nevoie.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📊 Monitorizare</h3>
+            <p>
+                Urmărește producția și identifică rapid problemele.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🔧 Suport tehnic</h3>
+            <p>
+                Te ajutăm să înțelegi și să identifici problemele sistemului.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<section class="calculator">
+
+    <p class="hero-label">CALCULATOR VOLTENZA</p>
+
+    <h2>Descoperă de ce sistem ai putea avea nevoie.</h2>
+
+    <p>
+        Introdu consumul tău lunar pentru o estimare orientativă.
+    </p>
+
+    <label for="consum">Consum lunar (kWh)</label>
+
+    <input
+        type="number"
+        id="consum"
+        placeholder="Ex: 300"
+    >
+    <br><br>
+
+<label for="baterie">Dorești și baterie?</label>
+
+<select id="baterie">
+
+    <option value="nu">Nu</option>
+    <option value="da">Da</option>
+
+</select>
+
+    <button onclick="calculeazaSistem()">
+        Calculează
+    </button>
+
+    <div id="rezultat"></div>
+    <a href="#oferta" class="offer-button">
+    Cere oferta VOLTENZA
+</a>
+
+</section>
+<section class="offer" id="oferta">
+
+    <p class="hero-label">CERE O OFERTĂ</p>
+
+    <h2>Hai să vedem ce soluție ți se potrivește.</h2>
+
+    <p>
+        Completează datele de mai jos și vom putea analiza
+        mai bine necesitățile tale.
+    </p>
+
+    <form>
+
+        <label for="nume">Nume</label>
+        <input type="text" id="nume" placeholder="Numele tău">
+
+        <label for="telefon">Telefon</label>
+        <input type="tel" id="telefon" placeholder="07xx xxx xxx">
+
+        <label for="localitate">Localitate</label>
+        <input type="text" id="localitate" placeholder="Localitatea">
+
+        <label for="consumOferta">Consum lunar (kWh)</label>
+        <input type="number" id="consumOferta" placeholder="Ex: 300">
+
+        <label for="baterieOferta">Dorești și baterie?</label>
+
+        <select id="baterieOferta">
+            <option value="nu">Nu</option>
+            <option value="da">Da</option>
+        </select>
+
+        <label for="mesaj">Mesaj</label>
+
+        <textarea
+            id="mesaj"
+            placeholder="Spune-ne ce ai nevoie..."
+        ></textarea>
+
+        <button type="submit">
+            Trimite cererea
+        </button>
+      <label class="consent">
+    <input type="checkbox" id="acord" required>
+    Sunt de acord ca datele introduse să fie folosite
+    pentru a răspunde solicitării mele.
+</label>  
+
+    </form>
+<footer>
+
+    <div class="footer-logo">
+        VOLTENZA
+    </div>
+
+    <p>
+        Energie. Tehnologie. Control.
+    </p>
+
+    <p>
+        Soluții fotovoltaice și suport tehnic.
+    </p>
+
+    <p class="copyright">
+        © 2026 VOLTENZA. Toate drepturile rezervate.
+    </p>
+
+</footer>
+</section>
