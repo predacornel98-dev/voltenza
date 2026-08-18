@@ -296,17 +296,15 @@ nav a {
 
     <div class="hero-buttons">
 
-        <a href="#" class="button">
-            Cere o ofertă
-        </a>
+     <a href="#formular" class="button">Cere o ofertă</a>
 
         <a href="#" class="button secondary">
             Calculează-ți sistemul
         </a>
-
-        <a href="#" class="button secondary">
-            Suport tehnic
-        </a>
+        <div id="formular"></div>
+<a href="#suport-tehnic" class="button secondary">
+    Suport tehnic
+</a>
 
     </div>
 
@@ -379,7 +377,61 @@ function trimiteCererea(event) {
     );
 }
 </script>
+<section id="suport-tehnic" class="support-section">
+    <div class="container">
+        <h2>Suport tehnic</h2>
+        <p>Ai o problemă cu echipamentul? Trimite-ne detaliile și revenim cât mai repede.</p>
 
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value=a0ebe25f-261a-4757-817f-1c49b501850b">
+
+            <input type="hidden" name="subject" value="Solicitare suport tehnic - Voltenza">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Nume și prenume"
+                required
+            >
+
+            <input
+                type="tel"
+                name="phone"
+                placeholder="Număr de telefon"
+                required
+            >
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Adresă de e-mail"
+                required
+            >
+
+            <select name="equipment" required>
+                <option value="">Alege echipamentul</option>
+                <option value="Huawei">Huawei</option>
+                <option value="Deye">Deye</option>
+                <option value="Stație de încărcare">Stație de încărcare</option>
+                <option value="Sistem fotovoltaic">Sistem fotovoltaic</option>
+                <option value="Alt echipament">Alt echipament</option>
+            </select>
+
+            <textarea
+                name="message"
+                placeholder="Descrie problema..."
+                rows="6"
+                required
+            ></textarea>
+
+            <button type="submit" class="button">
+                Trimite solicitarea
+            </button>
+
+        </form>
+    </div>
+</section>
 </body>
 
 
