@@ -484,20 +484,20 @@ function trimiteCererea(event) {
     ...
 
         <label for="nume">Nume</label>
-        <input type="text" id="nume" placeholder="Numele tău">
+     <input type="text" id="nume" name="name" placeholder="Numele tău" required>
 
         <label for="telefon">Telefon</label>
-        <input type="tel" id="telefon" placeholder="07xx xxx xxx">
+        <input type="tel" id="telefon" name="phone" placeholder="07xx xxx xxx" required>
 
         <label for="localitate">Localitate</label>
-        <input type="text" id="localitate" placeholder="Localitatea">
+      <input type="text" id="localitate" name="city" placeholder="Localitatea" required>
 
         <label for="consumOferta">Consum lunar (kWh)</label>
-        <input type="number" id="consumOferta" placeholder="Ex: 300">
+       <input type="number" id="consumOferta" name="consum_lunar" placeholder="Ex: 300" required>
 
         <label for="baterieOferta">Dorești și baterie?</label>
 
-        <select id="baterieOferta">
+      <select id="baterieOferta" name="baterie">
             <option value="nu">Nu</option>
             <option value="da">Da</option>
         </select>
@@ -505,9 +505,8 @@ function trimiteCererea(event) {
         <label for="mesaj">Mesaj</label>
 
         <textarea
-            id="mesaj"
-            placeholder="Spune-ne ce ai nevoie..."
-        ></textarea>
+        <textarea id="mesaj" name="message" placeholder="Spune-ne ce ai nevoie...">
+       
 
         <button type="submit">
             Trimite cererea
